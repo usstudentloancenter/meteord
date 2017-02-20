@@ -2,7 +2,6 @@ set -e
 set -x
 # for npm module re-building
 apt-get update -y
-apt-get install pdftk
 apt-get -y install build-essential g++ libssl-dev git python
 npm install -g node-gyp
 # pre-install node source code for faster building
