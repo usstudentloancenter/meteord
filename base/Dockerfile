@@ -11,6 +11,7 @@ ONBUILD ENV NODE_VERSION ${NODE_VERSION:-4.7.2}
 RUN bash $METEORD_DIR/lib/install_base.sh
 RUN bash $METEORD_DIR/lib/install_node.sh
 RUN bash $METEORD_DIR/lib/install_phantomjs.sh
+RUN bash $METEORD_DIR/lib/install_pdftk.sh
 RUN bash $METEORD_DIR/lib/cleanup.sh
 
 EXPOSE 80
