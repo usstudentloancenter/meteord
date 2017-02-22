@@ -15,4 +15,4 @@ RUN bash $METEORD_DIR/lib/install_pdftk.sh
 RUN bash $METEORD_DIR/lib/cleanup.sh
 
 EXPOSE 80
-ENTRYPOINT bash $METEORD_DIR/lib/npm_rebuild.s && hbash $METEORD_DIR/run_app.sh
+ENTRYPOINT bash $METEORD_DIR/lib/npm_rebuild.sh && bash $METEORD_DIR/run_app.sh
