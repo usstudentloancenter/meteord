@@ -5,6 +5,7 @@ if [ -d /bundle ]; then
   tar xzf *.tar.gz
   cd /bundle/bundle/programs/server/
   npm install --unsafe-perm
+  bash $METEORD_DIR/lib/npm_rebuild.sh
   cd /bundle/bundle/
 elif [[ $BUNDLE_URL ]]; then
   cd /tmp
